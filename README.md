@@ -9,7 +9,7 @@ This is a template for building a microservices based SAAS platform with the fol
 - CASL for permissioning
 - GraphQL for API gateway
 
-# Commands
+# Setup
 
 Install monorepo manager:
 
@@ -17,31 +17,59 @@ Install monorepo manager:
 npm install -g @microsoft/rush
 ```
 
-Initialize the project:
+or
 
 ```
-$ rush init
+pnpm add -g @microsoft/rush
+```
+
+Install dependencies
+
+```
+rush install
 ```
 
 Update packages and rebuild.
 
 ```
-$ rush update --full
-$ rush update --full --purge
-$ rush rebuild
+rush update --full
+rush update --full --purge
 ```
 
-Publish to NPM:
+Format
 
 ```
-$ rush version --bump --override-bump minor
-$ rush publish --publish --include-all
+rush format
+```
+
+Lint
+
+```
+rush lint
+```
+
+Build
+
+```
+rush build
+```
+
+or
+
+```
+rush rebuild
+```
+
+Test
+
+```
+rush test --verbose
 ```
 
 Check dependencies of each package.
 
 ```
-$ rush check
+rush check
 ```
 
 # Custom commands
