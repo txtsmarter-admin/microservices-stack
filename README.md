@@ -93,33 +93,3 @@ Open `common/config/command-line.json` and add a custom command.
 ```
 
 You can now run `rush test` to run it.
-
-# Publish policy
-
-Open `common/config/version-policies.json` and add a policy.
-
-```json
-[
-  {
-    "policyName": "framework",
-    "definitionName": "lockStepVersion",
-    "version": "1.3.2",
-    "nextBump": "patch"
-  }
-]
-```
-
-Open `rush.json` and attach this policy to each package.
-
-```json
-{
-   "projects": [
-    {
-      "packageName": "@xtest/sandbox",
-      "projectFolder": "packages/xtest-sandbox",
-      "versionPolicyName": "framework"
-    }
-    ...
-   ],
-}
-```
