@@ -36,19 +36,19 @@ rush update --full
 rush update --full --purge
 ```
 
-Format
+# Format
 
 ```
 rush format
 ```
 
-Lint
+# Lint
 
 ```
 rush lint
 ```
 
-Build
+# Build
 
 ```
 rush build
@@ -60,16 +60,24 @@ or
 rush rebuild
 ```
 
-Test
+# Test
 
 ```
 rush test --verbose
 ```
 
-Check dependencies of each package.
+# Dependency management
+
+Check mismatched dependencies across packages
 
 ```
 rush check
+```
+
+# Update all dependencies
+
+```
+etc/update.deps.sh -u
 ```
 
 # Custom commands
