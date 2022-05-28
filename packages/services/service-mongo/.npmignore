@@ -1,0 +1,15 @@
+# Stuff to be ignored for deployment/publication
+/.*
+/Dockerfile
+/Dockerfile-dev
+/deploy.gcloud.env
+/docker-compose.yml
+/enter-container
+/tsconfig.json
+/*.db
+/*.log
+/dev
+/envs
+/src
+/tests
+

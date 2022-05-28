@@ -1,0 +1,16 @@
+{
+  "name": "service-sql",
+  "dockerComposeFile": [
+    "../micro-dev-environment/docker-compose.yml",
+    "../micro-dev-environment/docker-compose.service-sql.yml"
+  ],
+  "service": "service-sql",
+  "workspaceFolder": "/home/my-app/micro-service-sql",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github"
+  ],
+  "shutdownAction": "none"
+}

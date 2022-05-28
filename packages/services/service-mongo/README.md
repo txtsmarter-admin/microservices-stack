@@ -1,0 +1,5 @@
+# ServiceMongo service
+
+## About
+
+TODO

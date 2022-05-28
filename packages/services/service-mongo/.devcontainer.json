@@ -1,0 +1,16 @@
+{
+  "name": "service-mongo",
+  "dockerComposeFile": [
+    "../micro-dev-environment/docker-compose.yml",
+    "../micro-dev-environment/docker-compose.service-mongo.yml"
+  ],
+  "service": "service-mongo",
+  "workspaceFolder": "/home/my-app/micro-service-mongo",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github"
+  ],
+  "shutdownAction": "none"
+}

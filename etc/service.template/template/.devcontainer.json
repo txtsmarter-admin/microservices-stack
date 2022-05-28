@@ -1,0 +1,16 @@
+{
+  "name": "{{serviceName}}",
+  "dockerComposeFile": [
+    "../micro-dev-environment/docker-compose.yml",
+    "../micro-dev-environment/docker-compose.{{serviceName}}.yml"
+  ],
+  "service": "{{serviceName}}",
+  "workspaceFolder": "/home/my-app/micro-{{serviceName}}",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github"
+  ],
+  "shutdownAction": "none"
+}

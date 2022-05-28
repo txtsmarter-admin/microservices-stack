@@ -1,0 +1,33 @@
+{
+  "name": "@my-app/service-mongo-api",
+  "version": "1.0.0",
+  "description": "Moleculer API of the service-mongo service",
+  "main": "dist",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist/",
+    "format": "prettier --write \"**/*.{js,ts}\"",
+    "lint": "eslint \"**/*.{js,ts}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "4.6.4",
+    "@types/node": "17.0.35",
+    "@types/uuid": "8.3.4",
+    "@typescript-eslint/eslint-plugin": "5.25.0",
+    "@typescript-eslint/parser": "5.25.0",
+    "eslint": "8.15.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.6.2",
+    "rimraf": "3.0.2"
+  },
+  "dependencies": {
+    "joiful": "3.0.2",
+    "moleculer": "0.14.21",
+    "reflect-metadata": "0.1.13",
+    "typed-moleculer": "1.0.5"
+  }
+}

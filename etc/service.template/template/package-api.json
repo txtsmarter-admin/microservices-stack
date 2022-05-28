@@ -1,0 +1,33 @@
+{
+  "name": "@my-app/{{serviceName}}-api",
+  "version": "1.0.0",
+  "description": "Moleculer API of the {{serviceName}} service",
+  "main": "dist",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist/",
+    "format": "prettier --write \"**/*.{js,ts}\"",
+    "lint": "eslint \"**/*.{js,ts}\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "4.4.2",
+    "@types/node": "16.7.8",
+    "@types/uuid": "8.3.1",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/parser": "4.30.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-prettier": "4.0.0",
+    "prettier": "2.3.2",
+    "rimraf": "3.0.2"
+  },
+  "dependencies": {
+    "joiful": "3.0.2",
+    "moleculer": "0.14.16",
+    "reflect-metadata": "0.1.13",
+    "typed-moleculer": "1.0.5"
+  }
+}

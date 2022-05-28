@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#
+# This is an example Git hook for use with Rush.  To enable this hook, rename this file
+# to "pre-commit" and then run "rush install", which will copy it from common/git-hooks
+# to the .git/hooks folder.
+#
+# TO LEARN MORE ABOUT GIT HOOKS
+#
+# The Git documentation is here: https://git-scm.com/docs/githooks
+# Some helpful resources: https://githooks.com
+#
+
+set -e
+
+# Build and run tests
+rush build
+rush test --verbose

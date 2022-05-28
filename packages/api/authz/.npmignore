@@ -1,0 +1,7 @@
+# Stuff to be ignored for deployment/publication
+/.*
+/index.ts
+/tsconfig.json
+/*.log
+/params
+/types

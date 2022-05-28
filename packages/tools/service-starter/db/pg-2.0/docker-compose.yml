@@ -1,0 +1,21 @@
+version: "3"
+
+networks:
+    dbnet:
+
+services:
+    pg-db-dev:
+        container_name: pg-db-dev
+        image: postgres:12
+        command: ['postgres', '-c', 'wal_level=logical']
+        networks:
+          - dbnet
+        volumes:
+          - ./postgres-data:/var/lib/postgresql/data  
+          - ./pg-init:/docker-entrypoint-initdb.d
+        ports:
+          - ${PORT}:5432
+        environment:
+          - POSTGRES_USER=${USER}
+          - POSTGRES_PASSWORD=${PASS}
+          - POSTGRES_MULTIPLE_DATABASES=${PG_DATABASES}

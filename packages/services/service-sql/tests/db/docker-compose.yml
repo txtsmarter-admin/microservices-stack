@@ -1,0 +1,22 @@
+version: '3.4'
+
+# All our services will be running on this network
+networks:
+  test:
+    attachable: true
+
+services:
+  service-sql-db:
+    container_name: service-sql-db-${NODE_ENV}
+    image: postgres:12
+    command: ['postgres', '-c', 'wal_level=logical']
+    networks:
+      - test
+    ports:
+      - ${PORT}:5432
+    environment:
+      PGPASSWORD: service-sql # To import schemas without password prompt
+      POSTGRES_PASSWORD: service-sql # Db password
+      POSTGRES_USER: service-sql
+      POSTGRES_DB: service-sql
+

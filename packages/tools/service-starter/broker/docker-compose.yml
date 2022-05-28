@@ -1,0 +1,9 @@
+
+version: "3"
+
+services:
+  rabbitmq:
+    image: "rabbitmq:3-management-alpine"
+    ports:
+      - "${PORT}:5672" # client connections for rabbitmq
+      - "15672:15672" # management port for rabbitmq

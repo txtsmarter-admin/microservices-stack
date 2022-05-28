@@ -1,0 +1,16 @@
+{
+  "name": "gw",
+  "dockerComposeFile": [
+    "../micro-dev-environment/docker-compose.yml",
+    "../micro-dev-environment/docker-compose.gw.yml"
+  ],
+  "service": "gw",
+  "workspaceFolder": "/home/my-app/micro-gw",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens",
+    "github.vscode-pull-request-github"
+  ],
+  "shutdownAction": "none"
+}
