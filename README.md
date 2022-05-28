@@ -2,12 +2,12 @@
 
 This is a template for building a microservices based SAAS platform with the following components:
 
-- moleculer microservices framework
-- RabbitMQ for messaging
+- [moleculer](https://moleculer.services) microservices framework
+- [RabbitMQ](https://www.rabbitmq.com) for messaging
 - Mongo/Postgres for data store
-- Mikro-ORM for database access layer
-- CASL for permissioning
-- GraphQL for API gateway
+- [Mikro-ORM](https://mikro-orm.io) for database access layer
+- [CASL](https://casl.js.org/v5/en) for authorization/permissioning
+- [TypeGraphQL](https://typegraphql.com) for API gateway
 
 # Setup
 
