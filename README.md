@@ -9,6 +9,18 @@ This is a template for building a microservices based SAAS platform with the fol
 - [CASL](https://casl.js.org/v5/en) for authorization/permissioning
 - [TypeGraphQL](https://typegraphql.com) for API gateway
 
+Some sample microservices have already been created:
+
+- gw: a GraphQL based API gateway
+- service-sql: a microservice that uses Postgres database backend
+- service-mongo: a microservice that uses a Mongo database backend
+
+# Create a new microservice
+
+```
+moleculer init --no-install ./etc/service.template packages/services/my-service
+```
+
 # Setup
 
 Install monorepo manager:
@@ -21,6 +33,18 @@ or
 
 ```
 pnpm add -g @microsoft/rush
+```
+
+Install moleculer-cli
+
+```
+npm install -g moleculer-cli
+```
+
+or
+
+```
+pnpm add -g moleculer-cli
 ```
 
 Install dependencies
