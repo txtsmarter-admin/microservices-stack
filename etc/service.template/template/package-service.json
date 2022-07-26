@@ -43,61 +43,61 @@
 {{#if mongo}}
     "@types/bson": "4.2.0",
 {{/if}}
-    "@types/jest": "27.5.1",
+    "@types/jest": "28.1.6",
     "@types/jsonwebtoken": "8.5.8",
     "@types/lodash": "4.14.182",
-    "@types/node": "17.0.36",
+    "@types/node": "18.6.1",
     "@types/object-hash": "2.2.1",
 {{#if sql}}
     "@types/uuid": "8.3.4",
 {{/if}}
-    "@typescript-eslint/eslint-plugin": "5.26.0",
-    "@typescript-eslint/parser": "5.26.0",
+    "@typescript-eslint/eslint-plugin": "5.31.0",
+    "@typescript-eslint/parser": "5.31.0",
     "cross-env": "7.0.3",
-    "eslint": "8.16.0",
+    "eslint": "8.20.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-prettier": "4.2.1",
     "fast-glob": "3.2.11",
-    "jest": "28.1.0",
-    "jest-extended": "2.0.0",
+    "jest": "28.1.3",
+    "jest-extended": "3.0.1",
     "jest-standard-reporter": "2.0.0",
     "moleculer-repl": "0.7.1",
 {{#if mongo}}
-    "mongodb-memory-server": "8.6.0",
+    "mongodb-memory-server": "8.8.0",
 {{/if}}
-    "prettier": "2.6.2",
+    "prettier": "2.7.1",
     "rimraf": "3.0.2",
-    "ts-jest": "28.0.3",
-    "ts-node": "10.8.0",
-    "type-fest": "2.13.0",
+    "ts-jest": "28.0.7",
+    "ts-node": "10.9.1",
+    "type-fest": "2.17.0",
     "typescript": "4.6.4",
     "utility-types": "3.10.0"
   },
   "dependencies": {
     "@my-app/authz-api": "workspace:*",
     "@my-app/{{serviceName}}-api": "workspace:*",
-    "@casl/ability": "5.4.4",
+    "@casl/ability": "6.0.0",
 {{#if needDb}} 
-    "@mikro-orm/cli": "5.1.4",
-    "@mikro-orm/core": "5.1.4",
+    "@mikro-orm/cli": "5.2.4",
+    "@mikro-orm/core": "5.2.4",
   {{#if mongo}}
-    "@mikro-orm/mongodb": "5.1.4",
+    "@mikro-orm/mongodb": "5.2.4",
   {{/if}}
   {{#if sql}}
-    "@mikro-orm/postgresql": "5.1.4",
-    "@mikro-orm/sqlite": "5.1.4",
+    "@mikro-orm/postgresql": "5.2.4",
+    "@mikro-orm/sqlite": "5.2.4",
   {{/if}}
 {{/if}}
-    "amqplib": "0.9.1",
+    "amqplib": "0.10.0",
     "dotenv": "16.0.1",
-    "ioredis": "5.0.5",
+    "ioredis": "5.2.2",
     "joiful": "3.0.2",
     "jsonwebtoken": "8.5.1",
     "lodash": "4.17.21",
     "moleculer": "0.14.21",
     "moleculer-context-db": "1.4.0",
-    "moment": "2.29.3",    
+    "moment": "2.29.4",    
     "notepack.io": "3.0.1",
     "object-hash": "3.0.0",
     "pkg-dir": "5.0.0",
@@ -108,7 +108,7 @@
 {{#if sql}}
     "uuid": "8.3.2",
 {{/if}}
-    "winston": "3.7.2",
+    "winston": "3.8.1",
     "winston-gelf-transporter": "1.0.2"
   },
   "engines": {
