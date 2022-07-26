@@ -1,4 +1,4 @@
 {
   "upgrade": true,
-  "reject": ["graphql", "pkg-dir", "typescript"]
+  "reject": ["graphql", "pkg-dir"]
 }
