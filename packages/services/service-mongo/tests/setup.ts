@@ -2,7 +2,6 @@
  * Copyright MyCompany 2022. All rights reserved.
  */
 import 'reflect-metadata';
-import 'jest-extended';
 import { MongoMemoryReplSet } from 'mongodb-memory-server';
 import { config } from '../src/lib/env';
 

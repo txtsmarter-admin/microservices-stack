@@ -80,6 +80,10 @@ module.exports = function (values) {
         let oldFileName;
         let newFileName;
 
+        oldFileName = `${projectPath}${path.sep}tsconfig-service.json`;
+        newFileName = `${projectPath}${path.sep}tsconfig.json`;
+        fs.renameSync(oldFileName, newFileName);
+
         oldFileName = `${projectPath}${path.sep}package-service.json`;
         newFileName = `${projectPath}${path.sep}package.json`;
         fs.renameSync(oldFileName, newFileName);
@@ -164,8 +168,8 @@ module.exports = function (values) {
           `${projectPath}${path.sep}.eslintignore`,
           `${newApiPath}${path.sep}.eslintignore`
         );
-        fs.copyFileSync(
-          `${projectPath}${path.sep}tsconfig.json`,
+        fs.renameSync(
+          `${projectPath}${path.sep}tsconfig-api.json`,
           `${newApiPath}${path.sep}tsconfig.json`
         );
         fs.copyFileSync(
