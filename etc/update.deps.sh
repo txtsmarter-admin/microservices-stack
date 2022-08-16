@@ -40,4 +40,7 @@ if printf '%s\n' "$@" | grep -q -E '^-u$|^--upgrade$'; then
 
   # check for dependency mismatches
   rush check
+
+  # format, lint, build, test!
+  rush format && rush lint && rush rebuild --verbose && rush test --verbose
 fi
