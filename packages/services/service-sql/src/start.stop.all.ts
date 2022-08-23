@@ -8,6 +8,7 @@ import {
   authenticateMoleculerContext,
   getAuthMiddleware
 } from './middlewares/moleculer.auth.middleware';
+import { getSagaMiddleware } from './middlewares/moleculer.saga.middleware';
 import {
   startServiceAndBroker,
   getService
@@ -29,7 +30,9 @@ export async function startAll() {
   const logInfo = broker.logger.info.bind(broker.logger);
   const logMiddleware = getLogMiddleware(logInfo);
 
-  const middlewares = [authMiddleware, logMiddleware];
+  const sagaMiddleware = getSagaMiddleware();
+
+  const middlewares = [authMiddleware, logMiddleware, sagaMiddleware];
 
   const dbMiddleware = await getDbMiddleware();
   middlewares.push(dbMiddleware);
