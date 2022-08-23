@@ -41,7 +41,7 @@ if (
   if (process.env.NODE_ENV === 'test') {
     const repl = broker.repl();
     setTimeout(async () => {
-      await repl.exec('quit');
+      await repl.eval('quit');
     }, 500);
   }
 }
