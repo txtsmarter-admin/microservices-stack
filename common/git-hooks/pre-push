@@ -13,5 +13,5 @@
 set -e
 
 # Build and run tests
-rush build
+rush build --verbose
 rush test --verbose
