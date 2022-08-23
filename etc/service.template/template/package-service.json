@@ -45,14 +45,14 @@
 {{/if}}
     "@types/jest": "28.1.7",
     "@types/jsonwebtoken": "8.5.8",
-    "@types/lodash": "4.14.182",
-    "@types/node": "18.7.6",
+    "@types/lodash": "4.14.184",
+    "@types/node": "18.7.11",
     "@types/object-hash": "2.2.1",
 {{#if sql}}
     "@types/uuid": "8.3.4",
 {{/if}}
-    "@typescript-eslint/eslint-plugin": "5.33.1",
-    "@typescript-eslint/parser": "5.33.1",
+    "@typescript-eslint/eslint-plugin": "5.34.0",
+    "@typescript-eslint/parser": "5.34.0",
     "cross-env": "7.0.3",
     "eslint": "8.22.0",
     "eslint-config-prettier": "8.5.0",
@@ -64,13 +64,13 @@
     "jest-standard-reporter": "2.0.0",
     "moleculer-repl": "0.7.2",
 {{#if mongo}}
-    "mongodb-memory-server": "8.8.0",
+    "mongodb-memory-server": "8.9.0",
 {{/if}}
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
     "ts-jest": "28.0.8",
     "ts-node": "10.9.1",
-    "type-fest": "2.18.0",
+    "type-fest": "2.19.0",
     "typescript": "4.7.4",
     "utility-types": "3.10.0"
   },
